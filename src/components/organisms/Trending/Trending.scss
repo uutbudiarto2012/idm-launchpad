@@ -1,0 +1,33 @@
+._trending{
+  .wrapper{
+    .trending-item{
+      border: 2px solid var(--yellow-color);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 20px;
+      .left{
+        width: 50px;
+        margin-right: 10px;
+        .icon{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .right{
+        flex: 1;
+        .title{
+          color: var(--white-color);
+          font-weight: 600;
+        }
+        .value{
+          color: var(--yellow-color);
+          font-weight: 700;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

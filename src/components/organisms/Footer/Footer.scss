@@ -1,0 +1,21 @@
+._footer{
+  padding: 20px 0;
+  .wrapper{
+    .coin-item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .social-item{
+      a{
+        font-size: 26px;
+      }
+    }
+    .copyright{
+      padding: 20px 0;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}

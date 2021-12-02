@@ -1,0 +1,11 @@
+.btn-yellow{
+  background-color: var(--yellow-color);
+  border: none;
+  border-radius: 6px;
+  color: var(--dark-color);
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(255, 219, 119, 0.699);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
