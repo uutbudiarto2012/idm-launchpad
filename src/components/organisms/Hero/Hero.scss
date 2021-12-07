@@ -2,12 +2,12 @@
   background-image: url('../../../assets/images/bg/bg-hero.png');
   background-repeat: no-repeat;
   background-size: contain;
-  // background-attachment: fixed;
   background-position: top;
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 150px;
   .wrapper  {
     display: flex;
     flex-direction: column;
@@ -29,6 +29,25 @@
       text-align: center;
       font-weight: 300;
       font-size: 18px;
+    }
+  }
+}
+
+@media (max-width:768px) {
+  ._hero{
+    margin-bottom: 100px;
+    .wrapper  {
+      .title{
+        font-size: 36px;
+      }
+      .sub-title{
+        font-size: 26px;
+      }
+      .desc{
+        text-align: center;
+        font-weight: 300;
+        font-size: 18px;
+      }
     }
   }
 }

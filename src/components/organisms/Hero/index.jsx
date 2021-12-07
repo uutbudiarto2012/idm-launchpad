@@ -15,12 +15,11 @@ const Hero = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro cum sequi culpa qui obcaecati natus eveniet, temporibus perspiciatis repellendus.
               </p>
               <div className="d-flex justify-content-around mt-5">
-                <Button type="link" to="/" w="100%" h={50} className="btn-yellow mx-3" title="Create" />
-                <Button type="link" to="/" w="100%" h={50} className="btn-yellow mx-3" title="Launchpad List" />
+                <Button type="link" to="/create?step=1" w="100%" h={50} className="btn-yellow mx-3" title="Create" />
+                <Button type="link" to="/list" w="100%" h={50} className="btn-yellow mx-3" title="Launchpad List" />
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

@@ -1,0 +1,28 @@
+._step{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: auto;
+  .line{
+    border-bottom: 2px dashed var(--yellow-color);
+    width: 100%;
+    position: absolute;
+    bottom: 50%;
+    z-index: -1;
+  }
+  .step-item{
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--yellow-color);
+    background-color: var(--dark-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    &.active{
+      background-color: var(--yellow-color);
+      color: var(--dark-color);
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Avatar, Logo } from '../../../assets'
 import { Button } from '../../atoms'
 import './Navbar.scss'
@@ -9,7 +10,9 @@ const Navbar = () => {
       <div className="container">
         <div className="wrapper">
           <div className="left">
-            <img src={Logo} alt="" className="logo" />
+            <Link to="/">
+              <img src={Logo} alt="" className="logo" />
+            </Link>
           </div>
           <div className="right">
             {
