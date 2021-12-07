@@ -23,3 +23,30 @@
     color: var(--yellow-color);
   }
 }
+@media (max-width: 768px) {
+  ._finish {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .wrapper {
+      padding: 100px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .cong {
+        font-weight: 800;
+        font-size: 36px;
+        color: var(--yellow-color);
+      }
+      .desc {
+        font-weight: 500;
+        font-size: 22px;
+      }
+    }
+    .back {
+      color: var(--yellow-color);
+    }
+  }
+}

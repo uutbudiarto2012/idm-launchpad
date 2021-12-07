@@ -13,48 +13,51 @@
     justify-content: center;
     align-items: center;
   }
-  .form-step{
-    .preview-info{
+  .form-step {
+    .preview-info {
       display: flex;
       margin-bottom: 20px;
-      .left{
+      .left {
         width: 80px;
         height: 80px;
         border-radius: 50%;
         background-color: var(--yellow-color);
         margin-right: 20px;
-        img{
+        img {
           width: 100%;
           height: 100%;
           border-radius: 50%;
           object-fit: cover;
         }
       }
-      .right{
+      .right {
         flex: 1;
-        .info-additional{
-          .item{
+        .info-additional {
+          .item {
             margin-right: 10px;
             display: flex;
-            .fa{
+            .fa {
               margin-right: 10px;
               color: var(--yellow-color);
               font-size: 22px;
             }
           }
         }
-        .desc{
+        .desc {
           font-size: 16px;
           font-weight: 300;
-          color: #AEAEAE;
+          color: #aeaeae;
+          @media (max-width: 768px){
+            font-size: 14px;
+          }
         }
       }
     }
-    .text{
+    .text {
       margin: 0 10px;
       display: flex;
     }
-    .addNew{
+    .addNew {
       background-color: var(--yellow-color);
       width: 30px;
       height: 30px;
@@ -63,26 +66,31 @@
       border-radius: 5px;
       color: var(--dark-color);
     }
-    .input-wrapper{
+    .input-wrapper {
       display: flex;
       padding-bottom: 5px;
       border-bottom: 1px solid var(--yellow-color);
       margin-bottom: 20px;
-      .option-info{
+      .option-info {
         background-color: var(--yellow-color);
         color: var(--dark-color);
         border-radius: 5px;
-        .input-token{
+        .input-token {
           border-radius: 5px;
         }
+        @media (max-width:768px) {
+          .input-token{
+            font-size: 12px;
+          }
+        }
       }
-      .isRequired{
+      .isRequired {
         color: var(--yellow-color);
         margin-right: 10px;
       }
-      &.desc{
+      &.desc {
         border-bottom: transparent;
-        .input-token{
+        .input-token {
           background-color: rgb(32, 32, 32);
           border: none;
           padding: 10px;
@@ -90,16 +98,16 @@
           border-radius: 5px;
         }
       }
-      .input-token{
-        flex: 2;
+      .input-token {
+        flex: 1;
         background-color: transparent;
         outline: none;
         border: none;
         font-size: 16px;
         padding: 0 10px;
       }
-      .action{
-        .link-action{
+      .action {
+        .link-action {
           display: inline-flex;
           justify-content: center;
           align-items: center;
@@ -111,15 +119,23 @@
           color: var(--dark-color);
           font-weight: 600;
         }
+        @media (max-width: 768px) {
+          .link-action {
+            width: 80px;
+            height: 30px;
+            font-size: 10px;
+            margin-bottom: 5px;
+          }
+        }
       }
     }
   }
-  .action-next{
+  .action-next {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    .next-link{
+    .next-link {
       color: var(--yellow-color);
       background-color: transparent;
       border: none;
